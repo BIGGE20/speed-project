@@ -38,10 +38,12 @@ while True:
         print("welcome to the game. Lets play!")
 
     for round in range(rounds):
-        choice_list = ['rock','paper','scissors']
+        choice_list = ['Rock','paper','Scissors']
         app_choice = random.choice(choice_list) #app chooses from the list...
         user_choice = input("Rock, Paper or Scissors: ").capitalize()
-
+        # Entry validation
+        while user_choice not in ["Rock","Paper","scissors"]:
+            user_choice=input("invalid Entry. Type Rock, Paper or scissors: ").capitalize()
         # Match the entries and determine a winner
         if user_choice == app_choice:
             print(f"it is a draw! We both chose {app_choice}")
