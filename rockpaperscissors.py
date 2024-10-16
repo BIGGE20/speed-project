@@ -2,8 +2,8 @@
 
 # initiate computers choice
 import random
-choice_list = ['rock','paper','scissors']
-app_choice = random.choice(choice_list) #app chooses from the list...
+# choice_list = ['rock','paper','scissors']
+# app_choice = random.choice(choice_list) #app chooses from the list...
 
 # initiate users choice
 # user_choice = input("welcome to the game. Rock, Paper or Scissors?: ").capitalize()
@@ -38,15 +38,17 @@ while True:
         print("welcome to the game. Lets play!")
 
     for round in range(rounds):
-        user_choice = input("Rock, Paper or scissors: ").capitalize()
+        choice_list = ['rock','paper','scissors']
+        app_choice = random.choice(choice_list) #app chooses from the list...
+        user_choice = input("Rock, Paper or Scissors: ").capitalize()
 
         # Match the entries and determine a winner
         if user_choice == app_choice:
             print(f"it is a draw! We both chose {app_choice}")
         elif(
-            user_choice == "Rock" and app_choice == "scissors" or
-            user_choice == "paper" and app_choice == "Rock" or
-            user_choice == "scissors" and app_choice == "paper"
+            user_choice == "Rock" and app_choice == "Scissors" or
+            user_choice == "Paper" and app_choice == "Rock" or
+            user_choice == "Scissors" and app_choice == "Paper"
         ):
             print(f"you won. you chose {user_choice} and i chose {app_choice}.")
         else:
