@@ -6,13 +6,4 @@ username = input()
 print("Awesome! now create a password")
 password = input()
 
-# Login with the username and password created
-
-#     print("nice one!")
-#     userpassword = input("enter password: ")
-#     if userpassword == password:
-#         print("Access Granted!")
-#     else:
-#         print("wrong password. try again")
-# else:
-#     print("wrong user name.. try again")
+#
