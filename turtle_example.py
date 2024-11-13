@@ -10,7 +10,7 @@ turtle2.color('blue')
 
 def make_square(the_turtle):
     for i in range(0,4):
-        the_turtle.forward(1)
+        the_turtle.forward(100)
         the_turtle.right(90)
 def make_spiral(the_turtle):
     for i in range(0,36):

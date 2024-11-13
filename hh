@@ -2,7 +2,7 @@
 
 import random as r
 
-colour_list = ['red','blue','green'] # a list of colour the app chooses from
+colour_list = ['red','blue',] # a list of colour the app chooses from
 
 # app chooses a random colour
 app_choice = r.choice(colour_list)
@@ -35,7 +35,7 @@ def setup():
     global turtle
     start_line = -470
 
-    turtle_color = ['red','blue','green','yellow','black']
+    turtle_color = ['red','blue','green','yellow','purple']
     turtle_ycor =[-20,0,20,40,-40]
     race_screen = turtle.Screen()
     race_screen.setup(1290,720)
